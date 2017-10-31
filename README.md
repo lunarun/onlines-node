@@ -6,7 +6,6 @@ Express + ejs 搭建web网站
 - Node.js: `6.11.3`
 - Express: `4.15.5`
 - Ejs: `2.5.7`
-- 前端框架：Bootstrap
 
 ## 使用步骤
 - git clone
