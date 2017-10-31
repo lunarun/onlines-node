@@ -6,6 +6,6 @@ web project by node
 
 - Node.js: `6.11.3`
 - Express: `4.15.5`
-- ejs: `2.5.7`
+- Ejs: `2.5.7`
 
-#不断完善 寄可以开发出来perfect project!
+#持续完善 寄可以开发出来perfect project!
