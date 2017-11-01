@@ -11,6 +11,7 @@ var home = require('./routes/home');
 var users = require('./routes/users');
 
 var app = express();
+var expressLayouts = require('express-ejs-layouts');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -18,10 +19,11 @@ app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine','html');
 app.engine('html', require('ejs-mate'));
-app.locals._layoutFile = 'layout.html';
+// app.locals._layoutFile = 'layout/login.html';
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(expressLayouts);
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
