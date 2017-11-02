@@ -19,6 +19,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine','html');
 app.engine('html', require('ejs-mate'));
+app.set('layout', 'layouts/layout.html');
 // app.locals._layoutFile = 'layout/login.html';
 
 // uncomment after placing your favicon in /public
